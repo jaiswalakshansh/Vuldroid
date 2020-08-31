@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightWhite"
+    tools:context=".Dashboard">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:padding="10dp"
+            android:textSize="30sp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/muli_bold" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="290dp"
+            android:text="Logout"
+            android:background="@color/colorPrimary"
+            android:onClick="logout"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/youtube"
+            android:onClick="youtubeview"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/round_bk5">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/youlogo"
+                android:layout_marginTop="-40dp"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Watch Online Videos"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/baloo"
+            android:textColor="@color/colorAccent"
+                android:layout_alignParentBottom="true"
+            android:padding="2dp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:id="@+id/blogss"
+            android:onClick="blogsview"
+            android:background="@drawable/blog">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Read Some blog here"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/baloo"
+                android:textColor="@color/colorAccent"
+                android:layout_alignParentBottom="true"
+                android:padding="2dp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/notesv"
+            android:onClick="notesview"
+            android:layout_margin="20dp"
+            android:background="@drawable/round_bk2">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/note"
+                android:layout_marginTop="-40dp"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keep Secret Note Here"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/baloo"
+                android:textColor="@color/colorAccent"
+                android:layout_alignParentBottom="true"
+                android:padding="2dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:onClick="sendmsgtoapp"
+            android:layout_margin="20dp"
+            android:background="@drawable/back">
+            <ImageView
+                android:layout_width="500dp"
+                android:layout_height="150dp"
+                android:src="@drawable/secretss"
+                android:layout_marginTop="-40dp"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send Message to Innocent APP"
+                android:background="@color/lightWhite"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/baloo"
+                android:textColor="@color/colorAccent"
+                android:layout_alignParentBottom="true"
+                android:padding="2dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/emailview"
+            android:onClick="emailview"
+            android:layout_margin="20dp"
+            android:background="@drawable/round_bk2">
+            <ImageView
+                android:layout_width="500dp"
+                android:layout_height="150dp"
+                android:src="@drawable/emailaddress"
+                android:layout_marginTop="-40dp"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="See Your Email Address"
+                android:background="@color/lightWhite"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/baloo"
+                android:textColor="@color/colorAccent"
+                android:layout_alignParentBottom="true"
+                android:padding="2dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
