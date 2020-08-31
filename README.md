@@ -5,6 +5,7 @@
 </p>
 Vuldroid is a Vulnerable Android Application made with security issues in order to demonstrate how they can occur in code.
 
+![Vuldroid](https://github.com/jaiswalakshansh/Vuldroid/raw/master/images/logo.png)
 
 In this first realease i have included some common vulns that occur in apps.
 
@@ -17,7 +18,7 @@ In this first realease i have included some common vulns that occur in apps.
 - Reading User Email via Broadcasts
 
 ## To Get started:
- - Install the APK from the repository and play around
+ - Install the APK from the [repository](https://github.com/jaiswalakshansh/Vuldroid/blob/master/Apks/Vuldroid.apk?raw=true) and play around
  - Find the aread where you think this can be exploited
  - I have also written a blog that you can refer as walkthrough but make sure you try yourself first
  - If you want to use your own firebase project for authentication clone the repo and remove the google-services.json and add your project one.
