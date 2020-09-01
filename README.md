@@ -5,7 +5,10 @@
 </p>
 Vuldroid is a Vulnerable Android Application made with security issues in order to demonstrate how they can occur in code.
 
-<img src="https://github.com/jaiswalakshansh/Vuldroid/raw/master/images/logo.png" align="centre" height="600" width="320">
+
+<img src="https://github.com/jaiswalakshansh/Vuldroid/raw/master/images/logo.png" align="centre" height="600" width="320"><img src="https://github.com/jaiswalakshansh/Vuldroid/blob/master/images/screen1.png" align="centre" height="600" width="320"><img src="https://github.com/jaiswalakshansh/Vuldroid/blob/master/images/screen3.png" align="right" height="600" width="320">
+
+
 
 In this first realease i have included some common vulns that occur in apps.
 
