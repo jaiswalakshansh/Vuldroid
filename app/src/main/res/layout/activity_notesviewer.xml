@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".notesviewer">
+    tools:context=".NotesViewer">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/saver"
@@ -46,5 +46,15 @@
         android:clickable="true"
         android:onClick="load"
         app:srcCompat="@android:drawable/ic_menu_view" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="620dp"
+        android:layout_marginLeft="150dp"
+        android:clickable="true"
+        android:onClick="createPdf"
+        app:srcCompat="@android:drawable/ic_menu_add" />
 
 </RelativeLayout>

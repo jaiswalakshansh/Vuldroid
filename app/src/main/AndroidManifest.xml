@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.vuldroid.application">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -10,22 +11,25 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EmailViewer">
+        <activity android:name=".RoutingActivity" android:exported="true"></activity>
+        <activity android:name=".EmailViewer"></activity>
 
-        </activity>
-        <receiver android:name=".MyReceiver"
+        <receiver
+            android:name=".MyReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.example.Broadcast" >
-                </action>
+                <action android:name="com.example.Broadcast"></action>
             </intent-filter>
-        </receiver>
-        <!-- register the service-->
+        </receiver> <!-- register the service -->
         <activity android:name=".SendMsgtoApp" />
-        <activity android:name=".notesviewer" android:exported="false" />
-        <activity android:name=".blogsviewer">
+        <activity
+            android:name=".NotesViewer"
+            android:exported="false" />
+        <activity android:name=".BlogsViewer">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -40,7 +44,7 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name=".youtubeviewer">
+        <activity android:name=".YoutubeViewer">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -48,8 +52,8 @@
                 <category android:name="android.intent.category.BROWSABLE" />
             </intent-filter>
         </activity>
-        <activity android:name=".requestpassword" />
-        <activity android:name=".forgetpassword">
+        <activity android:name=".RequestPassword" />
+        <activity android:name=".ForgetPassword">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -61,10 +65,12 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-        <activity android:name=".Dashboard" android:exported="false" />
-        <activity android:name=".signup" />
-        <activity android:name=".login" />
-        <activity android:name=".userlogin" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" />
+        <activity android:name=".Signup" />
+        <activity android:name=".Login" />
+        <activity android:name=".UserLogin" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -76,6 +82,15 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
     </application>
 
 </manifest>

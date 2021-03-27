@@ -12,17 +12,17 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Dashboard extends AppCompatActivity {
 
     public void youtubeview(View view){
-        Intent intent =new Intent(getApplicationContext(),youtubeviewer.class);
+        Intent intent =new Intent(getApplicationContext(), YoutubeViewer.class);
         startActivity(intent);
     }
 
     public void blogsview(View view){
-        Intent intent =new Intent(getApplicationContext(),blogsviewer.class);
+        Intent intent =new Intent(getApplicationContext(), BlogsViewer.class);
         startActivity(intent);
     }
 
     public void notesview(View view){
-        Intent intent =new Intent(getApplicationContext(),notesviewer.class);
+        Intent intent =new Intent(getApplicationContext(), NotesViewer.class);
         startActivity(intent);
     }
     public void sendmsgtoapp(View view){
@@ -38,7 +38,7 @@ public class Dashboard extends AppCompatActivity {
 public void logout(View view){
     FirebaseAuth.getInstance().signOut();
     finish();
-    startActivity(new Intent(getApplicationContext(), userlogin.class));
+    startActivity(new Intent(getApplicationContext(), UserLogin.class));
 }
 
 
