@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shadow"
+    tools:context=".NotesViewer">
+
+
+    <ImageView
+        android:id="@+id/login_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="dashboardroute"
+        android:padding="5dp"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+
+    <EditText
+        android:id="@+id/ed1"
+        android:background="@color/lightWhite"
+        android:layout_marginLeft="80dp"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="70dp"
+        android:height="300dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="240dp"
+        android:clickable="true"
+        android:onClick="sendmesage"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+
+</RelativeLayout>

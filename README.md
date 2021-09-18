@@ -13,6 +13,7 @@ Vuldroid is a Vulnerable Android Application made with security issues in order 
 
 
 ## Vulnerabilities Covered:
+- Code Execution via Malicious App
 - Steal Files via Webview using XHR request
 - Steal Files using Fileprovider via Intents
 - Steal Password ResetTokens/MagicLoginLinks
